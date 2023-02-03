@@ -1,0 +1,26 @@
+:root {
+    --background-color-primary: #141e30;
+    --background-color-secondary: #273458;
+    --accent-color: #0078FF;
+    --secondary-accent-color: #0052af;
+    --text-primary-color: #fff;
+    --shadow: rgba(0, 0, 0, 0.438);
+
+    &.light-theme {
+        --background-color-primary: #dfdfdf;
+    --background-color-secondary: #bfc3ce;
+    --accent-color: #0078FF;
+    --text-primary-color: rgb(6, 30, 49);
+    --shadow: rgba(0, 0, 0, 0.438);
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    color: var(--text-primary-color);
+    background-color: var(--background-color-primary);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
